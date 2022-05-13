@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Number Guesser</h1>
+      <p>Enter a number between <span class="min">1</span> and <span class="max">10</span></p>
+      <div class="game-wrapper">     
+        <div class="game-form">
+          <input type="number" name="guess-input" id="guess-input" placeholder="Guess">
+          <input type="submit" value="submit" id="submit-btn">
+        </div>
+        <span class="error-msg" style="display: none;">Error</span>
+        <img class="loading-gif"src="./img/loading.gif" alt="loading-Gif" style="display: none;">
+      </div>
+    </div>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
