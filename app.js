@@ -50,18 +50,13 @@ gameSubmit.addEventListener("click", function () {
         //   console.log(chancesLeft);
         if (chancesLeft === 0) {
           gameInput.disabled = true;
-          gameSubmit.textContent = "Play Again";
+          gameSubmit.value = "Play Again";
           displayMessage(`${guess} is not correct.You Lost`);
-          gameInput.disabled = true;
-          gameSubmit.textContent = "Play Again";
         } else {
           gameInput.value = "";
           displayMessage(
             `${guess} is not correct. You have ${chancesLeft} chances left`,
             "red"
-          );
-          console.log(
-            `${guess} is not correct. You have ${chancesLeft} chances left`
           );
         }
       }
